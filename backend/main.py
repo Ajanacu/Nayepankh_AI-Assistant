@@ -1,6 +1,6 @@
 """
 NayePankh AI Assistant — FastAPI Backend
-Author: [Your Name]
+Author: [Ajana C U]
 Description: REST API backend with Gemini AI, SQLite storage, and conversational memory
 """
 
