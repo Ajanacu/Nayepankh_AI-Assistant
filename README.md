@@ -1,213 +1,245 @@
-# 🕊️ NayePankh AI Assistant
+# NayePankh AI Assistant
 
-> A production-quality AI-powered chatbot for [NayePankh Foundation](https://nayepankh.com/) — a UP Government registered NGO helping underprivileged communities across India.
+> An AI-powered chatbot built for **NayePankh Foundation** to help users quickly access information about the organization, internships, volunteering opportunities, donations, and contact details through a simple conversational interface.
 
-Built with React + Vite + FastAPI + Gemini AI. Designed to answer questions about the foundation, guide users through internship and volunteering processes, and serve as a digital first point of contact.
+Built using **React + Vite + FastAPI + Google Gemini AI**.
 
----
+## Live Demo
 
-## ✨ Features
-
-### Core Chat
-- 🤖 **AI-powered responses** using Google Gemini (swappable to OpenAI/Anthropic)
-- 💬 **ChatGPT-like interface** — clean, modern, responsive
-- 📝 **Markdown support** — bold, bullets, headers, code blocks
-- 💻 **Code block syntax highlighting**
-- ⌨️ **Typing animation** while AI responds
-- 🔄 **Regenerate response** button
-- ⏹️ **Stop generation** button
-- 🧠 **Conversational memory** — context maintained across turns
-
-### Smart Workflows
-- 🎯 **Multi-step internship flow** — domain → student status → year → email → confirm
-- 🤝 **Volunteering guidance** — interest → tailored next steps
-- 🛡️ **Fallback handling** — never hallucinates; redirects to official website
-
-### UI/UX
-- 🌙 **Dark mode toggle**
-- 📱 **Fully responsive** — mobile, tablet, desktop
-- 📜 **Chat history** in sidebar — click to reopen
-- 💡 **Suggested prompts** on welcome screen
-- 🔗 **Quick links** (About, Volunteer, Internship, Donate, Contact)
-- 📋 **Copy response** button on each message
-- 📋 **Copy entire conversation**
-- 💾 **Export chat as .txt file**
-- 🔢 **Character counter** in input
-- ⌨️ **Enter to send, Shift+Enter for new line**
-- 🔄 **Auto-scroll** to latest message
-
-### Backend
-- 🚀 **FastAPI** with full REST API
-- 🗄️ **SQLite** for session and message storage
-- 📚 **Structured knowledge base** (JSON)
-- 🔌 **LLM-agnostic architecture** — swap Gemini for any LLM in minutes
+**🌐 https://nayepankh-ai-assistant.vercel.app**
 
 ---
 
-## 🗂️ Project Structure
 
-```
-nayepankh-ai/
-├── frontend/                 # React + Vite frontend
+
+# Features
+
+## AI Chat Assistant
+
+* AI-powered responses using **Google Gemini**
+* Answers questions about NayePankh Foundation
+* Provides information on internships and volunteering
+* Markdown formatted responses
+* ChatGPT-inspired interface
+* Typing indicator while generating responses
+
+---
+
+## Chat Experience
+
+* Multiple chat sessions
+* Chat history sidebar
+* Suggested prompts for quick access
+* Copy individual responses
+* Copy entire conversation
+* Export conversation as a text file
+* Regenerate response option
+* Character counter
+* Auto-scroll to latest message
+* Enter to send and Shift+Enter for a new line
+
+---
+
+## User Interface
+
+* Responsive design
+* Mobile and desktop friendly
+* Dark mode support
+* Modern clean interface
+* Quick navigation buttons
+
+---
+
+## Backend
+
+* FastAPI REST API
+* Google Gemini integration
+* SQLite database for storing chat sessions
+* Environment variable support for API keys
+
+---
+
+# Tech Stack
+
+| Layer       | Technology                  |
+| ----------- | --------------------------- |
+| Frontend    | React 18 + Vite             |
+| Styling     | Tailwind CSS                |
+| Backend     | FastAPI                     |
+| AI          | Google Gemini               |
+| Database    | SQLite                      |
+| HTTP Client | Axios                       |
+| Icons       | React Icons                 |
+| Markdown    | react-markdown              |
+
+
+---
+
+# Project Structure
+
+```text
+Nayepankh_AI-Assistant/
+│
+├── frontend/
 │   ├── src/
-│   │   ├── App.jsx           # Main app component
-│   │   ├── main.jsx          # Entry point
-│   │   └── index.css         # Global styles
-│   ├── index.html
+│   ├── public/
 │   ├── package.json
-│   ├── vite.config.js
-│   └── tailwind.config.js
+│   └── vite.config.js
+│
 ├── backend/
-│   ├── main.py               # FastAPI app (all endpoints)
+│   ├── main.py
 │   └── requirements.txt
+│
 ├── knowledge/
-│   └── nayepankh.json        # Structured knowledge base
-├── .env.example              # Environment variables template
+│   └── nayepankh.json
+│
 └── README.md
 ```
 
 ---
 
-## 🛠️ Tech Stack
+# Installation
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React 18 + Vite |
-| Styling | Tailwind CSS |
-| Animations | Framer Motion |
-| Icons | React Icons |
-| Markdown | react-markdown + remark-gfm |
-| Syntax | react-syntax-highlighter |
-| Backend | FastAPI (Python) |
-| AI | Google Gemini 1.5 Flash |
-| Database | SQLite |
-| HTTP | Axios |
+## Clone Repository
 
----
-
-## 🚀 Installation & Setup
-
-### Prerequisites
-- Node.js 18+
-- Python 3.10+
-- A Google Gemini API key (free tier available)
-
-### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/nayepankh-ai.git
-cd nayepankh-ai
+git clone https://github.com/Ajanacu/Nayepankh_AI-Assistant.git
+
+cd Nayepankh_AI-Assistant
 ```
 
-### 2. Environment Variables
-```bash
-cp .env.example .env
-# Edit .env and add your GEMINI_API_KEY
-```
+## Backend
 
-### 3. Run the Backend
 ```bash
 cd backend
+
+python -m venv venv
+
+# Linux/macOS
+source venv/bin/activate
+
+# Windows
+# venv\Scripts\activate
+
 pip install -r requirements.txt
+
 uvicorn main:app --reload --port 8000
 ```
-Backend runs at: `http://localhost:8000`
 
-### 4. Run the Frontend
-```bash
-cd frontend
-npm install
-npm run dev
+Backend runs at:
+
 ```
-Frontend runs at: `http://localhost:5173`
+http://localhost:8000
+```
 
 ---
 
-## 🔌 API Endpoints
+## Frontend
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/` | Health check |
-| `POST` | `/chat` | Send a message, get AI response |
-| `POST` | `/clear` | Clear a session's messages |
-| `GET` | `/history` | Get all sessions or a session's messages |
-| `POST` | `/save` | Save/update a named session |
-| `GET` | `/knowledge` | Return the full knowledge base |
+```bash
+cd frontend
 
-### Example: POST /chat
+npm install
+
+npm run dev
+```
+
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Environment Variables
+
+### Backend (.env)
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+### Frontend (.env)
+
+```env
+VITE_API_URL=http://localhost:8000
+```
+
+For deployment, replace it with your backend URL:
+
+```env
+VITE_API_URL=https://your-backend.onrender.com
+```
+
+---
+
+# API Endpoints
+
+| Method | Endpoint   | Description                        |
+| ------ | ---------- | ---------------------------------- |
+| GET    | `/`        | Health check                       |
+| POST   | `/chat`    | Send a message to the AI assistant |
+| GET    | `/history` | Retrieve chat history              |
+| POST   | `/clear`   | Clear a chat session               |
+| POST   | `/save`    | Save a chat session                |
+
+Example:
+
 ```json
 {
-  "session_id": "uuid-here",
-  "message": "I want to apply for an internship",
-  "history": [
-    { "role": "user", "content": "Hello" },
-    { "role": "assistant", "content": "Hi! How can I help?" }
-  ]
+  "session_id": "12345",
+  "message": "How can I volunteer?"
 }
 ```
 
 ---
 
-## 🔄 Swapping the AI Provider
+# Deployment
 
-The backend is designed to make LLM swapping trivial. In `backend/main.py`:
+### Frontend
 
-```python
-# Current: Google Gemini
-import google.generativeai as genai
-model = genai.GenerativeModel("gemini-1.5-flash")
+* Vercel
 
-# To switch to OpenAI:
-# from openai import OpenAI
-# client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-# response = client.chat.completions.create(model="gpt-4o-mini", messages=[...])
+### Backend
 
-# To switch to Anthropic Claude:
-# import anthropic
-# client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+* Render
+
+Remember to configure:
+
+```env
+VITE_API_URL=https://your-backend.onrender.com
+```
+
+and
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 ---
 
-## 📸 Screenshots
+# Author
 
-_Add screenshots of your running application here_
+**Ajana C U**
 
----
+B.Tech Computer Science Engineering
 
-## 🌐 Deployment
-
-### Frontend (Vercel)
-```bash
-cd frontend
-npm run build
-# Deploy the dist/ folder to Vercel
-```
-
-### Backend (Railway / Render)
-```bash
-# Add GEMINI_API_KEY as environment variable
-# Deploy backend/ directory
-# Update VITE_API_URL in frontend/.env to point to deployed backend
-```
+Interested in Artificial Intelligence, Machine Learning, and Full-Stack Development.
 
 ---
 
-## 👨‍💻 Author
+## Project Goals
 
-Built for NayePankh Foundation as a portfolio project demonstrating:
-- Full-stack AI application development
-- FastAPI backend architecture
-- Modern React patterns (hooks, state management)
-- LLM integration and prompt engineering
-- Production UI/UX design
+This project demonstrates:
 
----
-
-## 📄 License
-
-MIT License — feel free to use and adapt for educational and NGO purposes.
+* Full-stack web development
+* AI API integration
+* FastAPI backend development
+* React frontend development
+* REST API communication
+* Database integration with SQLite
+* Responsive UI design
 
 ---
 
-> *"If we all do something, then together there is no problem that we cannot solve!"*  
-> — Prashant Shukla, Founder & President, NayePankh Foundation
