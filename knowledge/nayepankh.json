@@ -1,0 +1,49 @@
+{
+  "name": "NayePankh Foundation",
+  "tagline": "New Wings — New Beginnings",
+  "about": "NayePankh Foundation is a UP Government registered NGO and one of the biggest student-led organisations in India. Founded by Prashant Shukla, it operates in Kanpur, Ghaziabad and various other cities. The foundation has helped over 2 lakh (200,000+) underprivileged people by providing free food, sanitary pads, clothes and education.",
+  "registration": "UP Government Registered NGO. Also registered under 80G and 12A of the Indian Income Tax Act — all donations are tax-exempt.",
+  "mission": "To uplift underprivileged communities through education, healthcare support, nutrition, and empowerment programs. NayePankh believes that 'Service to mankind is the service to God.'",
+  "vision": "Think global, Act local. To create a revolutionary, equitable society where every person has access to basic necessities and opportunities, regardless of their background.",
+  "programs": [
+    "Free Food Distribution — providing meals to those in need",
+    "Sanitary Pad Distribution — promoting menstrual hygiene",
+    "Clothing Drives — distributing clothes to underprivileged communities",
+    "Free Education Support — helping children access quality education",
+    "Healthcare Awareness Campaigns",
+    "Women Empowerment Initiatives"
+  ],
+  "internships": {
+    "overview": "NayePankh offers internship programs for students who want to gain real-world experience while making a social impact. Internships are project-based with certificates provided.",
+    "domains": ["Artificial Intelligence (AI)", "Web Development", "Python Programming", "Data Analytics", "Social Media Management", "Content Writing", "Graphic Design", "Event Management", "Human Resources", "Marketing & Fundraising"],
+    "duration": "Typically 4–8 weeks",
+    "eligibility": "Open to college students (all years) and recent graduates",
+    "benefits": ["Certificate of completion", "Letter of recommendation (for outstanding interns)", "Real project experience", "Portfolio building", "Networking with NGO professionals"],
+    "process": "Apply via the official website or contact the foundation. Select your domain, fill the application form, and await confirmation.",
+    "stipend": "Internships are currently volunteer-based, focused on skill development and social impact."
+  },
+  "volunteer": {
+    "overview": "NayePankh welcomes volunteers from all backgrounds who want to contribute their time and skills to social causes.",
+    "domains": ["Education — teaching and tutoring underprivileged children", "Technology — building digital tools and platforms", "Social Media — creating content and managing campaigns", "Fundraising — organising donation drives", "Healthcare — awareness and support camps", "Event Management — organising community events", "Content & Writing — blogs, reports, communications"],
+    "how": "Visit nayepankh.com, go to the 'Join Us' section, fill in your details and area of interest, and the team will get in touch.",
+    "benefits": "Volunteering certificate, impactful experience, and the joy of giving back."
+  },
+  "donation": {
+    "methods": ["Online via the website at nayepankh.com/donate", "UPI and bank transfer available", "Donations are tax-exempt under 80G"],
+    "note": "Every contribution makes a real difference. 'We don't ask for much, just help us with what you can — be it Money, Skill or Your Time.'"
+  },
+  "contact": {
+    "email": "contact@nayepankh.com",
+    "phone": "+91-8318500748",
+    "website": "https://nayepankh.com",
+    "instagram": "http://www.instagram.com/nayepankhfoundation",
+    "linkedin": "https://www.linkedin.com/company/nayepankh",
+    "youtube": "https://www.youtube.com/@nayepankhfoundation",
+    "facebook": "http://www.facebook.com/nayepankhfoundation",
+    "twitter": "http://www.twitter.com/nayepankh"
+  },
+  "founder": "Prashant Shukla, Founder & President of NayePankh Foundation",
+  "events": "NayePankh regularly organises food drives, clothing distribution events, awareness campaigns, and community outreach programs. Follow @nayepankhfoundation on Instagram for the latest.",
+  "cities": "Kanpur, Ghaziabad, and various other cities across India.",
+  "impact": "Over 2 lakh (200,000+) underprivileged people helped through food, clothes, hygiene products, and education."
+}
