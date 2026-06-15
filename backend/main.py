@@ -26,7 +26,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:3000",
-        "https://nayepankh-ai-assistant.vercel.app"
+        "https://nayepankh-ai-assistant.vercel.app",
         "https://nayepankh-ai-assistant-git-main-ajanacus-projects.vercel.app",
     ],
     allow_credentials=True,
